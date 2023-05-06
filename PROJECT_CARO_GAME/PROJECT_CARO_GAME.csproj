@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{962785C9-27E9-48EB-9AA4-2280405365F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT_CARO_GAME</RootNamespace>
+    <AssemblyName>PROJECT_CARO_GAME</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoardChess.cs" />
+    <Compile Include="BoardChess10x10.cs" />
+    <Compile Include="BoardChess15x15.cs" />
+    <Compile Include="CaroChess.cs" />
+    <Compile Include="CaroChess10x10.cs" />
+    <Compile Include="CaroChess15x15.cs" />
+    <Compile Include="CellChess.cs" />
+    <Compile Include="ConnectLanNetwork.cs" />
+    <Compile Include="GUI_OPENGAME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_OPENGAME.Designer.cs">
+      <DependentUpon>GUI_OPENGAME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUIDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUIDE.Designer.cs">
+      <DependentUpon>GUIDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayMode.Designer.cs">
+      <DependentUpon>PlayMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayWithComputer.Designer.cs">
+      <DependentUpon>PlayWithComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithComputer10x10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayWithComputer10x10.Designer.cs">
+      <DependentUpon>PlayWithComputer10x10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithComputer15x15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayWithComputer15x15.Designer.cs">
+      <DependentUpon>PlayWithComputer15x15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithComputer_ChooseSizeChessBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayWithComputer_ChooseSizeChessBoard.Designer.cs">
+      <DependentUpon>PlayWithComputer_ChooseSizeChessBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayWithPlayer.Designer.cs">
+      <DependentUpon>PlayWithPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTER.Designer.cs">
+      <DependentUpon>REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="GUIDE.resx">
+      <DependentUpon>GUIDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_OPENGAME.resx">
+      <DependentUpon>GUI_OPENGAME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayMode.resx">
+      <DependentUpon>PlayMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayWithComputer.resx">
+      <DependentUpon>PlayWithComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayWithComputer10x10.resx">
+      <DependentUpon>PlayWithComputer10x10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayWithComputer15x15.resx">
+      <DependentUpon>PlayWithComputer15x15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayWithComputer_ChooseSizeChessBoard.resx">
+      <DependentUpon>PlayWithComputer_ChooseSizeChessBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayWithPlayer.resx">
+      <DependentUpon>PlayWithPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="REGISTER.resx">
+      <DependentUpon>REGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caro_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayWithPlayer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayWithComputer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database_Caro.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database_Caro_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database_Caro.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

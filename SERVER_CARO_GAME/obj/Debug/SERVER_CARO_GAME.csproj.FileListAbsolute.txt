@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\bin\Debug\SERVER_CARO_GAME.exe.config
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\bin\Debug\SERVER_CARO_GAME.exe
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\bin\Debug\SERVER_CARO_GAME.pdb
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.Properties.Resources.resources
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.exe
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.pdb
+C:\Users\Admin\source\repos\PROJECT_CARO_GAME\SERVER_CARO_GAME\obj\Debug\SERVER_CARO_GAME.Server.resources
